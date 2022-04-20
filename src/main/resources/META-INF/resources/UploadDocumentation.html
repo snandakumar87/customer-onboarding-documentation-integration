@@ -61,7 +61,7 @@ $scope.uploadFiles = function () {
 
 
             $http({
-            url: baseURL+'/onboarding/documents?requestId='+requestId,
+            url: baseURL+'/onboardingdocs/documents?requestId='+requestId,
             method: "POST",
             data: data,
              headers: {'Content-Type': undefined},
