@@ -1,12 +1,12 @@
 if (!!window.EventSource) {
 
-    var eventSource = new EventSource("/onboarding/stream");
+    var eventSource = new EventSource("/onboardingdocs/streaming");
 
     eventSource.onmessage = function(event) {
 
         data = JSON.parse(event.data);
 
-        var row = '<tr><td>' + data.requestId+ '</td><td>' + data.Documents + '</td><td>' ;
+        var row = '<tr><td>' + data.requestId+ '</td><td>' + data.Documents + '</td>' ;
 
 
  row+='<td><button type="button" id="ajaxSubmit" onclick="checkout('+data.requestId+')">Details</button></td>';

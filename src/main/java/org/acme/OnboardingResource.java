@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-@Path("/onboarding")
+@Path("/onboardingdocs")
 @ApplicationScoped
 public class OnboardingResource {
 
@@ -35,7 +35,7 @@ public class OnboardingResource {
 
 
     @GET
-    @Path("/stream")
+    @Path("/streaming")
     @Produces(MediaType.SERVER_SENT_EVENTS)
     @SseElementType(MediaType.TEXT_PLAIN)
     public Publisher<String> stream()
